@@ -1,0 +1,124 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="main">
+        <div class="circle"></div>
+        <header>
+            <a href=""><img src="logo.png" class="logo" alt="logo"></a>
+            <div class="toggle" onclick="toggleMenu()"></div>
+            <ul class="navigation">
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#contactme">Contact us</a></li>
+            </ul>
+        </header>
+        <div class="context">
+            <div class="textBox">
+                <h2>9Tea's Coffee</h2>
+                <p>"9 Tea's Cafe", Mira Bhayander twin cities most loved place for a cup of Tea, coffee or Satisfying
+                    Your taste buds. famously known as "9 Tea's", we endeavor to give the best involvement to our
+                    visitors Our Variety of foods and Beverages making memories with the visitors who made us our
+                    identity today and We're happy to be a reason of their happiness.</p>
+                <a href="#">About Us</a>
+            </div>
+            <div class="imgBox">
+                <!-- Swiper -->
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="iced-coffee.png" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="pngtree-pearl.png" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="pngtree-black.png" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="coffee4.png" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <ul class="sci">
+            <li><a href="#"><img src="insta.png" alt=""></a>
+            <li>
+            <li><a href="#"><img src="png-transparenttwitter.png" alt=""></a>
+            <li>
+            <li><a href="#"><img src="facebook.png" alt=""></a>
+            <li>
+        </ul>
+    </div>
+
+    <section>
+        <!-- <h2 id="menu" class="Special">our Special</h2> -->
+
+        <!-- contact us  -->
+        <div class="form-container">
+            <h2 id="contactme" class="touch">Contact us</h2>
+            <form class="form" id="contact-form">
+                <div class="form-group">
+                    <label for="email">Email :</label>
+                    <input type="text" id="email" name="email" required="">
+                </div>
+                <div class="form-group">
+                    <label for="textarea">How Can We Help You ?</label>
+                    <textarea name="textarea" id="message" rows="10" cols="50" required=""></textarea>
+                </div>
+                <button class="form-submit-btn" type="submit">Submit</button>
+            </form>
+        </div>
+
+
+    </section>
+    <!-- footer  -->
+    <footer>
+            <div class="footer">
+                <footer class="centered-footer">
+                    <p>&copy; 2023 Your Website. All rights reserved.</p>
+                </footer>
+            </div>
+        </footer>
+
+
+
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<!-- Initialize Swiper -->
+<script>
+    var swiper = new Swiper(".mySwiper", {
+        effect: "cube",
+        grabCursor: true,
+        cubeEffect: {
+            shadow: true,
+            slideShadows: true,
+            shadowOffset: 20,
+            shadowScale: 0.94,
+        },
+        pagination: {
+            el: ".swiper-pagination",
+        },
+        loop: true,
+    });
+</script>
+<script src="./form.js"></script>
+<!-- slider 1  -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+
+</html>
